@@ -4,8 +4,11 @@
 <head>
     <title>Cute & Modern Calculator</title>
     <style>
+
+
         /* ... (previous styles) ... */
         
+    
         .navbar {
             background-color: #fd71e1;
             padding: 10px;
@@ -24,6 +27,7 @@
             text-decoration: underline;
         }
 
+div
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f0f0f0;
@@ -35,11 +39,12 @@
         }
         .calculator {
             background-color: #6f69e2;
-            border-radius: 15px;
+            border-radius: 16px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            padding: 0px;
             text-align: center;
         }
+        
         input[type="text"], input[type="button"] {
             width: 50px;
             height: 50px;
@@ -52,11 +57,11 @@
             transition: background-color 0.3s, color 0.3s;
         }
         input[type="text"] {
-            width: 100%;
+            width: 89%;
             font-size: 24px;
             background-color: #f5f5f5;
             color: #333;
-            padding: 10px;
+            padding: 2px;
             text-align: right;
         }
         input[type="button"]:hover {
@@ -65,13 +70,16 @@
         }
     </style>
 </head>
-<body>
+<header> 
     <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        
+        <a href="irscal.html">IRS Calculator</a>
     </div>
+</header> 
+<div> 
 
+</div>
     <div class="calculator">
         <h1>Cute & Modern Calculator</h1>
         <!-- ... (calculator content) ... -->
@@ -95,7 +103,7 @@
             }
         }
     </script>
-
+<body> 
 <div class="calculator">
     <input type="text" id="result" value="0">
     <br>
@@ -118,6 +126,6 @@
     <input type="button" value="0" onclick="appendToResult('0')">
     <input type="button" value="=" onclick="calculate()">
     <input type="button" value="+" onclick="appendToResult('+')">
-</div>
+</div> 
 </body>
 </html>
